@@ -1,0 +1,10 @@
+<table *ngIf="routeData && routeData.length">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+    </tr>
+    <tr *ngFor="let data of routeData">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+    </tr>
+</table>
